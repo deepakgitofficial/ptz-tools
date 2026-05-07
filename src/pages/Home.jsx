@@ -131,7 +131,7 @@ const Home = () => {
       </section> */}
 
       {/* ── Tool Groups ─────────────────────────────────────────────── */}
-      <section className=" mx-auto px-6 md:px-12 pb-16 space-y-12 tool-groups md:mt-20 mt-8">
+      <section className=" mx-auto px-6 md:px-12 pb-16 space-y-12 tool-groups md:mt-24 mt-12 ">
         {toolGroups.map((group, gi) => (
           <div key={gi}>
             {/* Group heading */}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 import { FaCompress } from "react-icons/fa6";
 import {
   BiCalculator, BiMoney, BiHome, BiImage, BiCrop,
@@ -7,6 +8,7 @@ import {
 } from 'react-icons/bi';
 import { FaBaby, FaBirthdayCake, FaExchangeAlt, FaRulerCombined, FaShieldAlt, FaBolt, FaGift } from 'react-icons/fa';
 import { GoCodeSquare } from 'react-icons/go';
+import Footer from '../components/Layout/Footer';
 
 const toolGroups = [
   {
@@ -21,14 +23,14 @@ const toolGroups = [
       { name: 'Land Area Calculator', link: '/land-area-calculator', icon: <FaRulerCombined />, desc: 'Irregular land area in sq ft & gaj' },
       { name: 'Pregnancy Due Date', link: '/pregnancy-due-date-calculator', icon: <FaBaby />, desc: 'Estimate delivery date & trimester' },
       { name: 'Age Calculator', link: '/age-calculator', icon: <FaBirthdayCake />, desc: 'Exact age with next birthday' },
-      { name: 'Currency Converter', link: '/currency-converter', icon: <FaExchangeAlt />, desc: 'Live exchange rates, 150+ currencies' },
+
     ],
   },
   {
     category: 'Image Tools',
-    color: 'from-violet-400 to-purple-600',
-    bg: 'from-violet-50 to-purple-50',
-    border: 'border-violet-200',
+    color: 'from-green-400 to-emerald-600',
+    bg: 'from-green-50 to-emerald-50',
+    border: 'border-green-200',
     tools: [
       { name: 'Image Resizer', link: '/image-resizer', icon: <BiImage />, desc: 'Resize to any dimension instantly' },
       { name: 'Image Compressor', link: '/image-compressor', icon: <FaCompress />, desc: 'Reduce file size without quality loss' },
@@ -38,12 +40,13 @@ const toolGroups = [
     ],
   },
   {
-    category: 'Text Tools',
-    color: 'from-pink-400 to-fuchsia-600',
-    bg: 'from-pink-50 to-fuchsia-50',
-    border: 'border-pink-200',
+    category: 'Grammar & Text Tools',
+    color: 'from-orange-400 to-orange-600',
+    bg: 'from-orange-50 to-orange-50',
+    border: 'border-orange-200',
     tools: [
       { name: 'Words Case Converter', link: '/words-case-converter', icon: <BiText />, desc: 'Convert between upper, lower, title case' },
+      { name: 'Currency Converter', link: '/currency-converter', icon: <FaExchangeAlt />, desc: 'Live exchange rates, 150+ currencies' },
     ],
   },
   {
@@ -67,20 +70,21 @@ const stats = [
 const Home = () => {
   return (
     <div className="min-h-screen bg-[var(--background)]">
+      <Navbar />
 
       {/* ── Hero ───────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden" style={{ background: 'var(--gradient-hero)' }}>
-        {/* Decorative blobs */}
+      {/* <section className="relative overflow-hidden" style={{ background: 'var(--gradient-hero)' }}>
+
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-[var(--primary)] opacity-10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-[var(--primary-dark)] opacity-10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 max-w-3xl mx-auto px-6 py-20 text-center animate-fade-in">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-[var(--primary)] text-sm font-semibold mb-6">
             <FaBolt className="w-3 h-3" />
-            Free • Fast • Private
+            100% Free
           </div>
 
-          <h1 className="text-5xl sm:text-6xl font-black text-white leading-tight mb-5">
+          <h1 className="text-3xl sm:text-5xl font-bold text-white  mb-5">
             Your All-in-One<br />
             <span className="bg-gradient-to-r from-[var(--primary)] to-[var(--primary-dark)] bg-clip-text text-transparent">
               Tool Suite
@@ -107,10 +111,10 @@ const Home = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ── Stats ──────────────────────────────────────────────────── */}
-      <section className="max-w-4xl mx-auto px-6 -mt-6 mb-12 relative z-10">
+      {/* <section className="max-w-4xl mx-auto px-6 -mt-6 mb-12 relative z-10">
         <div className="grid grid-cols-3 gap-4">
           {stats.map((s, i) => (
             <div
@@ -124,10 +128,10 @@ const Home = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* ── Tool Groups ─────────────────────────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-6 pb-16 space-y-12 tool-groups">
+      <section className=" mx-auto px-6 md:px-12 pb-16 space-y-12 tool-groups md:mt-20 mt-8">
         {toolGroups.map((group, gi) => (
           <div key={gi}>
             {/* Group heading */}
@@ -138,7 +142,7 @@ const Home = () => {
             </div>
 
             {/* Tool cards grid */}
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
               {group.tools.map((tool, ti) => (
                 <Link
                   key={ti}
@@ -159,15 +163,15 @@ const Home = () => {
                     <p className="font-bold text-[var(--text-primary)] text-sm group-hover:text-[var(--primary-dark)] transition-colors">
                       {tool.name}
                     </p>
-                    <p className="text-xs text-[var(--text-secondary)] mt-0.5 leading-relaxed">
+                    {/* <p className="text-xs text-[var(--text-secondary)] mt-0.5 leading-relaxed">
                       {tool.desc}
-                    </p>
+                    </p> */}
                   </div>
-                  <div className="mt-auto">
+                  {/* <div className="mt-auto">
                     <span className="text-xs font-semibold text-[var(--primary-dark)] flex items-center gap-1 group-hover:gap-2 transition-all">
                       Open tool <BiArrowToRight />
                     </span>
-                  </div>
+                  </div> */}
                 </Link>
               ))}
             </div>
@@ -176,9 +180,7 @@ const Home = () => {
       </section>
 
       {/* ── Footer note ─────────────────────────────────────────────── */}
-      <footer className="border-t border-[var(--border)] py-6 text-center text-sm text-[var(--text-muted)]">
-        All calculations are performed locally in your browser — your data never leaves your device.
-      </footer>
+      <Footer />
     </div>
   );
 };

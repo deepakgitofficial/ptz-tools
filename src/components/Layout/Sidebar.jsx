@@ -71,8 +71,13 @@ const Sidebar = ({ isOpen, onClose }) => {
     const [openIndex, setOpenIndex] = useState(0) // default open first group
 
     const handleToggle = (index) => {
-        setOpenIndex((prev) => (prev === index ? null : index))
+        setOpenIndex((prev) => (prev === index ? null : index));
+
+
     }
+
+    const currentYear = new Date().getFullYear();
+
 
     return (
         <>
@@ -179,7 +184,7 @@ const Sidebar = ({ isOpen, onClose }) => {
                 {/* ── Footer ──────────────────────────────────────────────── */}
                 <div className="px-5 py-4 border-t border-white/5">
                     <p className="text-[0.65rem] text-slate-600 text-center">
-                        © 2025 FinTools • All tools are free & secure
+                        © {currentYear} FinTools • All tools are free & secure
                     </p>
                 </div>
             </aside >

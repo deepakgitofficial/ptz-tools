@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { NavLink, Route, Routes } from 'react-router-dom'
+import { NavLink, Outlet, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Sidebar from './components/Layout/Sidebar'
 import EmiCalculator from './components/EmiCalculator'
@@ -21,7 +21,7 @@ import { BiChevronRight, BiChevronRightCircle, BiHome, BiMenu, BiSearch, BiShare
 import CodeUnminifier from './components/developer-tools/CodeUnminifier'
 
 
-const AppLayout = () => {
+const AppLayout = ({ children }) => {
     const [sidebarOpen, setSidebarOpen] = useState(false)
     return (
         <>
@@ -57,9 +57,12 @@ const AppLayout = () => {
 
                     {/* Route content */}
                     <main className="flex-1">
+                        {/* {children} */}
+                        <Outlet />
 
-                        <Routes>
-                            {/* <Route path='/' element={<Home />} /> */}
+
+                        {/* <Routes>
+                            <Route path='/' element={<Home />} />
                             <Route path='/emi-calculator' element={<EmiCalculator />} />
                             <Route path='/gst-calculator' element={<GSTCalculatorAdvanced />} />
                             <Route path='/ppf-calculator' element={<PPFCalculator />} />
@@ -75,7 +78,7 @@ const AppLayout = () => {
                             <Route path='/words-case-converter' element={<CaseConverter />} />
                             <Route path='/code-minifier' element={<CodeMinifier />} />
                             <Route path='/code-unminifier' element={<CodeUnminifier />} />
-                        </Routes>
+                        </Routes> */}
                     </main>
                 </div>
             </div>

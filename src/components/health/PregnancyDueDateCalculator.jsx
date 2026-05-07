@@ -3,7 +3,7 @@ import { FaBaby, FaHeartbeat } from "react-icons/fa";
 import { BiInfoCircle, BiCalculator, BiCalendar } from "react-icons/bi";
 
 const milestones = [
-    { week: 6,  label: "Heartbeat detectable" },
+    { week: 6, label: "Heartbeat detectable" },
     { week: 10, label: "Vital organs formed" },
     { week: 12, label: "End of 1st Trimester" },
     { week: 20, label: "Anatomy scan / gender" },
@@ -16,7 +16,7 @@ const milestones = [
 const trimesterColors = {
     "1st Trimester": { bg: "bg-blue-50", border: "border-blue-300", text: "text-blue-700", bar: "bg-blue-400", badge: "badge-primary" },
     "2nd Trimester": { bg: "bg-amber-50", border: "border-amber-300", text: "text-amber-700", bar: "bg-amber-400", badge: "badge-warning" },
-    "3rd Trimester": { bg: "bg-rose-50",  border: "border-rose-300",  text: "text-rose-700",  bar: "bg-rose-400",  badge: "badge-error" },
+    "3rd Trimester": { bg: "bg-rose-50", border: "border-rose-300", text: "text-rose-700", bar: "bg-rose-400", badge: "badge-error" },
 };
 
 const PregnancyDueDateCalculator = () => {
@@ -81,7 +81,7 @@ const PregnancyDueDateCalculator = () => {
                         {method === "lmp" && (
                             <div className="grid grid-cols-2 gap-4 animate-slide-up">
                                 <div className="form-group">
-                                    <label className="form-label flex items-center gap-1"><BiCalendar /> LMP Date</label>
+                                    <label className="form-label flex items-center gap-1"><BiCalendar className="inline" /> LMP Date</label>
                                     <input type="date" value={lmpDate} onChange={e => setLmpDate(e.target.value)} className="form-input" />
                                 </div>
                                 <div className="form-group">

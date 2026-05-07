@@ -17,6 +17,7 @@ import { HiMenu } from 'react-icons/hi'
 import CaseConverter from './components/text-tools/CaseConverter'
 import CodeMinifier from './components/developer-tools/CodeMinifier'
 import AppLayout from './AppLayout'
+import CodeUnminifier from './components/developer-tools/CodeUnminifier'
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -53,11 +54,30 @@ function App() {
         </header>
 
         {/* Route content */}
+        {/* hide sidebar on home page */}
         <main className="flex-1">
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='/*' element={<AppLayout />} >
+              <Route path='test/' element={<h1>EMI Calculator</h1>} />
+              <Route path='emi-calculator' element={<EmiCalculator />} />
+              <Route path='gst-calculator' element={<GSTCalculatorAdvanced />} />
+              <Route path='ppf-calculator' element={<PPFCalculator />} />
+              <Route path='land-area-calculator' element={<LandAreaCalculator />} />
+              <Route path='pregnancy-due-date-calculator' element={<PregnancyDueDateCalculator />} />
+              <Route path='age-calculator' element={<AgeCalculator />} />
+              <Route path='currency-converter' element={<CurrencyConverter />} />
+              <Route path='image-resizer' element={<ImageResizer />} />
+              <Route path='image-compressor' element={<ImageCompressor />} />
+              <Route path='image-cropper' element={<ImageCropper />} />
+              <Route path='image-converter' element={<ImageConverter />} />
+              <Route path='image-to-text-ocr' element={<ImageToTextOCR />} />
+              <Route path='words-case-converter' element={<CaseConverter />} />
+              <Route path='code-minifier' element={<CodeMinifier />} />
+              <Route path='code-unminifier' element={<CodeUnminifier />} />
+            </Route>
           </Routes>
-          <AppLayout />
+
         </main>
       </div>
     </div>

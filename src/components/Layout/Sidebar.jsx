@@ -72,8 +72,6 @@ const Sidebar = ({ isOpen, onClose }) => {
 
     const handleToggle = (index) => {
         setOpenIndex((prev) => (prev === index ? null : index));
-
-
     }
 
     const currentYear = new Date().getFullYear();

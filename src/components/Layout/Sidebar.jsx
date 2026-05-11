@@ -56,6 +56,9 @@ const sideMenu = [
         children: [
             { name: 'Code Minifier', link: '/code-minifier', icon: <GoCodeSquare /> },
             { name: 'Code Unminifier', link: '/code-unminifier', icon: <GoCodeSquare /> },
+            { name: 'Color Palette Generator', link: '/color-palette-generator', icon: <GoCodeSquare /> },
+            { name: 'Pro Color Palette Generator', link: '/pro-color-palette-generator', icon: <GoCodeSquare /> },
+            { name: 'Font Pairing Tool', link: '/font-pairing-tool', icon: <GoCodeSquare /> },
             // { name: 'Code Formatter', link: '/code-formatter', icon: <GoCodeSquare /> },
             // { name: 'Code Validator', link: '/code-validator', icon: <GoCodeSquare /> },
 
@@ -182,7 +185,7 @@ const Sidebar = ({ isOpen, onClose }) => {
                 {/* ── Footer ──────────────────────────────────────────────── */}
                 <div className="px-5 py-4 border-t border-white/5">
                     <p className="text-[0.65rem] text-slate-600 text-center">
-                        © {currentYear} FinTools • All tools are free & secure
+                        © {currentYear} PTZ Tools • All tools are free & secure
                     </p>
                 </div>
             </aside >

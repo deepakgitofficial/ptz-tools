@@ -56,7 +56,10 @@ const toolGroups = [
     border: "border-rose-200",
     tools: [
       { name: 'Code Minifier', link: '/code-minifier', icon: <GoCodeSquare />, desc: 'Minify JavaScript & CSS with advanced optimisation' },
-      { name: "Code Unminifier", link: "/code-unminifier", icon: <GoCodeSquare />, desc: "Unminify JavaScript & CSS with advanced optimisation" }
+      { name: "Code Unminifier", link: "/code-unminifier", icon: <GoCodeSquare />, desc: "Unminify JavaScript & CSS with advanced optimisation" },
+      { name: 'Color Palette Generator', link: '/color-palette-generator', icon: <GoCodeSquare />, desc: 'Generate harmonious color palettes from a base color' },
+      { name: 'Pro Color Palette Generator', link: '/pro-color-palette-generator', icon: <GoCodeSquare />, desc: 'Advanced palette generator with multiple algorithms & export options' },
+      { name: 'Font Pairing Tool', link: '/font-pairing-tool', icon: <GoCodeSquare />, desc: 'Discover beautiful font combinations for your projects' },
     ]
   }
 ];

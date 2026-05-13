@@ -37,6 +37,7 @@ const toolGroups = [
       { name: 'Image Cropper', link: '/image-cropper', icon: <BiCrop />, desc: 'Crop with custom aspect ratios' },
       { name: 'Image Converter', link: '/image-converter', icon: <BiTransfer />, desc: 'Convert between JPG, PNG, WEBP' },
       { name: 'Image to Text OCR', link: '/image-to-text-ocr', icon: <BiText />, desc: 'Extract text from any image' },
+      { name: 'Watermark Adder', link: '/watermark-adder', icon: <BiText />, desc: 'Extract text from any image' },
     ],
   },
   {

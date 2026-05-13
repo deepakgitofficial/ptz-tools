@@ -39,6 +39,8 @@ const sideMenu = [
             { name: 'Image Cropper', link: '/image-cropper', icon: <BiCrop /> },
             { name: 'Image Converter', link: '/image-converter', icon: <BiTransfer /> },
             { name: 'Image to Text OCR', link: '/image-to-text-ocr', icon: <BiText /> },
+            { name: 'Watermark Add', link: '/watermark-adder', icon: <BiText /> },
+
         ],
     },
     {

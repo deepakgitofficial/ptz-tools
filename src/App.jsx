@@ -18,6 +18,7 @@ import CodeUnminifier from './components/developer-tools/CodeUnminifier'
 import ColorPaletteGenerator from './components/developer-tools/ColorPaletteGenerator'
 import ProColorPaletteGenerator from './components/developer-tools/ProColorPaletteGenerator'
 import FontPairingTool from './components/developer-tools/FontPairingTool'
+import WatermarkAdder from './components/most-usefull/WatermarkAdder'
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route path='color-palette-generator' element={<ColorPaletteGenerator />} />
         <Route path='pro-color-palette-generator' element={<ProColorPaletteGenerator />} />
         <Route path='font-pairing-tool' element={<FontPairingTool />} />
+        <Route path='watermark-adder' element={<WatermarkAdder />} />
 
       </Route>
     </Routes>

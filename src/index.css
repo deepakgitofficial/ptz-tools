@@ -7,7 +7,7 @@
 /* ─── Design Tokens ────────────────────────────────────────────────────── */
 :root {
     /* Brand */
-    --primary: #00e7c8;
+    --primary: #14aaaf;
     --primary-dark: #00b0cf;
     --primary-light: rgba(0, 231, 200, 0.12);
     --primary-glow: rgba(0, 231, 200, 0.35);

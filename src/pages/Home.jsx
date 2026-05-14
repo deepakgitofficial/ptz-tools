@@ -38,6 +38,7 @@ const toolGroups = [
       { name: 'Image Converter', link: '/image-converter', icon: <BiTransfer />, desc: 'Convert between JPG, PNG, WEBP' },
       { name: 'Image to Text OCR', link: '/image-to-text-ocr', icon: <BiText />, desc: 'Extract text from any image' },
       { name: 'Watermark Adder', link: '/watermark-adder', icon: <BiText />, desc: 'Extract text from any image' },
+      { name: 'Passport Size Photo Maker', link: '/passport-size-photo-maker', icon: <BiText /> },
     ],
   },
   {
@@ -48,6 +49,9 @@ const toolGroups = [
     tools: [
       { name: 'Words Case Converter', link: '/words-case-converter', icon: <BiText />, desc: 'Convert between upper, lower, title case' },
       { name: 'Currency Converter', link: '/currency-converter', icon: <FaExchangeAlt />, desc: 'Live exchange rates, 150+ currencies' },
+
+      { name: 'Compare Between', link: '/diff-checker', icon: <FaExchangeAlt />, desc: 'Comprission' },
+
     ],
   },
   {

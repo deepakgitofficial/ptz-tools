@@ -19,6 +19,8 @@ import ColorPaletteGenerator from './components/developer-tools/ColorPaletteGene
 import ProColorPaletteGenerator from './components/developer-tools/ProColorPaletteGenerator'
 import FontPairingTool from './components/developer-tools/FontPairingTool'
 import WatermarkAdder from './components/most-usefull/WatermarkAdder'
+import PassportSizePhotoMaker from './components/most-usefull/PassportSizePhotoMaker'
+import DiffChecker from './components/text-tools/DiffChecker'
 
 function App() {
   return (
@@ -45,6 +47,8 @@ function App() {
         <Route path='pro-color-palette-generator' element={<ProColorPaletteGenerator />} />
         <Route path='font-pairing-tool' element={<FontPairingTool />} />
         <Route path='watermark-adder' element={<WatermarkAdder />} />
+        <Route path='passport-size-photo-maker' element={<PassportSizePhotoMaker />} />
+        <Route path='diff-checker' element={<DiffChecker />} />
 
       </Route>
     </Routes>

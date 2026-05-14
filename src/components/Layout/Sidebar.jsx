@@ -40,6 +40,7 @@ const sideMenu = [
             { name: 'Image Converter', link: '/image-converter', icon: <BiTransfer /> },
             { name: 'Image to Text OCR', link: '/image-to-text-ocr', icon: <BiText /> },
             { name: 'Watermark Add', link: '/watermark-adder', icon: <BiText /> },
+            { name: 'Passport Size Photo Maker', link: '/passport-size-photo-maker', icon: <BiText /> },
 
         ],
     },
@@ -49,6 +50,8 @@ const sideMenu = [
         dropdown: true,
         children: [
             { name: 'Words Case Converter', link: '/words-case-converter', icon: <BiHome /> },
+            { name: 'Compare Between', link: '/diff-checker', icon: <BiHome /> },
+
         ],
     },
     {

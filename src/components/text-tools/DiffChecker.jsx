@@ -34,6 +34,7 @@ import {
 // LANGUAGE MAP
 // ----------------------------------------------------
 const LANGUAGES = [
+
     "javascript",
     "typescript",
     "json",
@@ -355,7 +356,7 @@ const DiffChecker = () => {
                     <div className="tool-body space-y-7">
 
                         {/* CONTROLS */}
-                        <div className="grid xl:grid-cols-4 gap-5">
+                        <div className="grid xl:grid-cols-3 gap-5">
 
                             {/* Language */}
                             <div className="result-card p-5">
@@ -432,7 +433,7 @@ const DiffChecker = () => {
                             </div>
 
                             {/* Search */}
-                            <div className="result-card p-5">
+                            {/* <div className="result-card p-5">
 
                                 <label className="result-label mb-3 block">
                                     Search
@@ -453,7 +454,7 @@ const DiffChecker = () => {
 
                                 </div>
 
-                            </div>
+                            </div> */}
 
                             {/* Options */}
                             <div className="result-card p-5">

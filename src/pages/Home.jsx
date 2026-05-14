@@ -50,7 +50,7 @@ const toolGroups = [
       { name: 'Words Case Converter', link: '/words-case-converter', icon: <BiText />, desc: 'Convert between upper, lower, title case' },
       { name: 'Currency Converter', link: '/currency-converter', icon: <FaExchangeAlt />, desc: 'Live exchange rates, 150+ currencies' },
 
-      { name: 'Compare Between', link: '/diff-checker', icon: <FaExchangeAlt />, desc: 'Comprission' },
+      { name: 'Compare Code & Text', link: '/diff-checker', icon: <FaExchangeAlt />, desc: 'Comprission' },
 
     ],
   },
@@ -60,11 +60,12 @@ const toolGroups = [
     bg: "from-rose-50 to-rose-50",
     border: "border-rose-200",
     tools: [
+      { name: 'Compare Code', link: '/diff-checker', icon: <FaExchangeAlt />, desc: 'Comprission code ' },
       { name: 'Code Minifier', link: '/code-minifier', icon: <GoCodeSquare />, desc: 'Minify JavaScript & CSS with advanced optimisation' },
       { name: "Code Unminifier", link: "/code-unminifier", icon: <GoCodeSquare />, desc: "Unminify JavaScript & CSS with advanced optimisation" },
       { name: 'Color Palette Generator', link: '/color-palette-generator', icon: <GoCodeSquare />, desc: 'Generate harmonious color palettes from a base color' },
       { name: 'Pro Color Palette Generator', link: '/pro-color-palette-generator', icon: <GoCodeSquare />, desc: 'Advanced palette generator with multiple algorithms & export options' },
-      { name: 'Font Pairing Tool', link: '/font-pairing-tool', icon: <GoCodeSquare />, desc: 'Discover beautiful font combinations for your projects' },
+      // { name: 'Font Pairing Tool', link: '/font-pairing-tool', icon: <GoCodeSquare />, desc: 'Discover beautiful font combinations for your projects' },
     ]
   }
 ];

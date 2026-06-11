@@ -17,6 +17,7 @@ const toolGroups = [
     bg: 'from-blue-50 to-blue-50',
     border: 'border-blue-200',
     tools: [
+      { name: 'Amazon Fees Calculator', link: '/amazon-fees-calculator', icon: <BiMoney /> },
       { name: 'EMI Calculator', link: '/emi-calculator', icon: <BiCalculator />, desc: 'Plan your loan EMIs instantly' },
       { name: 'GST Calculator', link: '/gst-calculator', icon: <BiCalculator />, desc: 'Inclusive & exclusive GST calculation' },
       { name: 'PPF Calculator', link: '/ppf-calculator', icon: <BiMoney />, desc: 'Track your PPF maturity amount' },

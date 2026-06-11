@@ -12,6 +12,8 @@ import { HiSparkles } from 'react-icons/hi'
 import { FaLaptopCode } from "react-icons/fa";
 import { GoCodeSquare } from "react-icons/go";
 
+import AmazonFeesCalculator from '../ecommerce/AmazonFeesCalculator'
+
 const sideMenu = [
 
     {
@@ -20,6 +22,7 @@ const sideMenu = [
         dropdown: true,
         children: [
 
+            { name: 'Amazon Fees Calculator', link: '/amazon-fees-calculator', icon: <BiMoney /> },
             { name: 'EMI Calculator', link: '/emi-calculator', icon: <BiCalculator /> },
             { name: 'GST Calculator', link: '/gst-calculator', icon: <BiCalculator /> },
             { name: 'PPF Calculator', link: '/ppf-calculator', icon: <BiMoney /> },

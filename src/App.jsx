@@ -21,6 +21,7 @@ import FontPairingTool from './components/developer-tools/FontPairingTool'
 import WatermarkAdder from './components/most-usefull/WatermarkAdder'
 import PassportSizePhotoMaker from './components/most-usefull/PassportSizePhotoMaker'
 import DiffChecker from './components/text-tools/DiffChecker'
+import AmazonFeesCalculator from './components/ecommerce/AmazonFeesCalculator'
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
         <Route path='watermark-adder' element={<WatermarkAdder />} />
         <Route path='passport-size-photo-maker' element={<PassportSizePhotoMaker />} />
         <Route path='diff-checker' element={<DiffChecker />} />
+        <Route path='amazon-fees-calculator' element={<AmazonFeesCalculator />} />
 
       </Route>
     </Routes>

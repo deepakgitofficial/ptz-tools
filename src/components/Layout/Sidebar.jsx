@@ -11,18 +11,19 @@ import { FaBaby, FaBirthdayCake, FaCompressAlt, FaExchangeAlt, FaRulerCombined }
 import { HiSparkles } from 'react-icons/hi'
 import { FaLaptopCode } from "react-icons/fa";
 import { GoCodeSquare } from "react-icons/go";
+import { AiFillAmazonCircle } from "react-icons/ai";
 
 import AmazonFeesCalculator from '../ecommerce/AmazonFeesCalculator'
 
 const sideMenu = [
 
     {
-        name: 'Calculate & Currency Tools',
+        name: 'Useful Tools',
         icon: <BiSolidCalculator />,
         dropdown: true,
         children: [
 
-            { name: 'Amazon Fees Calculator', link: '/amazon-fees-calculator', icon: <BiMoney /> },
+            { name: 'Amazon Fees Calculator', link: '/amazon-fees-calculator', icon: <AiFillAmazonCircle /> },
             { name: 'EMI Calculator', link: '/emi-calculator', icon: <BiCalculator /> },
             { name: 'GST Calculator', link: '/gst-calculator', icon: <BiCalculator /> },
             { name: 'PPF Calculator', link: '/ppf-calculator', icon: <BiMoney /> },
@@ -147,12 +148,12 @@ const Sidebar = ({ isOpen, onClose }) => {
                     text-sm font-semibold transition-all duration-200
                     ${isOpen
                                             ? 'text-[var(--primary)] bg-[var(--bg-sidebar-active)]'
-                                            : 'text-slate-400 hover:text-white hover:bg-white/5'
+                                            : 'text-slate-400 text-white hover:text-white hover:bg-white/5'
                                         }
                   `}
                                 >
-                                    <span className="text-base flex-shrink-0">{item.icon}</span>
-                                    <span className="flex-1 text-left">{item.name}</span>
+                                    <span className="text-base flex-shrink-0 text-white">{item.icon}</span>
+                                    <span className="flex-1 text-left text-white">{item.name}</span>
                                     <BiChevronDown
                                         className={`w-4 h-4 flex-shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-[var(--primary)]' : ''}`}
                                     />
@@ -164,7 +165,7 @@ const Sidebar = ({ isOpen, onClose }) => {
                                     style={{ maxHeight: isOpen ? `${item.children.length * 48}px` : '0px' }}
                                 >
 
-                                    <div className="mt-0.5 ml-3 pl-3 border-l border-white/5 space-y-0.5">
+                                    <div className="mt-0.5 ml-3 pl-3 border-l border-white/5 space-y-0.5 ">
                                         {item.children.map((child, childIndex) => (
                                             <NavLink
                                                 key={childIndex}
@@ -175,7 +176,7 @@ const Sidebar = ({ isOpen, onClose }) => {
                           text-sm font-medium transition-all duration-150
                           ${isActive
                                                         ? 'text-[var(--primary)] bg-[var(--bg-sidebar-active)]'
-                                                        : 'text-slate-500 hover:text-slate-200 hover:bg-white/5'
+                                                        : 'text-white hover:text-white hover:bg-white/5  '
                                                     }
                         `}
                                             >

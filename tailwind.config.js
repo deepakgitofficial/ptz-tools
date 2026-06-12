@@ -20,6 +20,10 @@ export default {
           success: "var(--success)",
           warning: "var(--warning)",
           error: "var(--error)",
+          bgcard: "var(--bg-card)",
+          bgprimary: "var(--bg-primary)",
+          bgsecondary: "var(--bg-secondary)",
+          bgsidebar: "var(--bg-sidebar)",
           gradient: {
             primary: "var(--gradient-primary)",
             secondary: "var(--gradient-secondary)",
